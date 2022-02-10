@@ -397,7 +397,7 @@ th{
                         <p>PM4ML_DOMAIN</p>
                     </td>
                     <td>
-                        <p><a href="${PM4ML_DOMAIN}</a></p>
+                        <p><a href="http://${PM4ML_DOMAIN}">http://${PM4ML_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
@@ -408,7 +408,7 @@ th{
                         <p>MOJALOOP_RELEASE</p>
                     </td>
                     <td>
-                        <p><a href="var.helm_mojaloop_release_name">var.helm_mojaloop_release_name</a></p>
+                        <p><a href="http://${MOJALOOP_RELEASE}">http://${MOJALOOP_RELEASE}</a></p>
                     </td>
                     <td>
                         <p />
