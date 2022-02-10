@@ -55,6 +55,9 @@ resource "local_file" "gp_auto_environment_file" {
     BUCKET			                       = "${var.client}-mojaloop-state",
     tenant                             = "${var.client}",
     environment                        = "${var.environment}",
+    ALIAS_ORACLE                       = (data.terraform_remote_state.k8s-base.outputs.alias-oracle-fqdn),
+    ACCOUNT_ORACLE                     = (data.terraform_remote_state.k8s-base.outputs.mfi-account-oracle-fqdn),
+    PM4ML_DOMAIN                       = "${replace(var.client, "-", "")}${replace(var.environment, "-", "")}k3s.${data.terraform_remote_state.iac.outputs.public_subdomain}",
     MOJALOOP_RELEASE                   = "${var.helm_mojaloop_release_name}"
   })
   filename   = "${path.root}/Auto/Env/Lab.auto_environment.html"
