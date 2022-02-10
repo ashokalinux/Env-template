@@ -397,7 +397,7 @@ th{
                         <p>MOJALOOP_RELEASE</p>
                     </td>
                     <td>
-                        <p><a href="${MOJALOOP_RELEASE}">${MOJALOOP_RELEASE}</a></p>
+                        <p><code>${MOJALOOP_RELEASE}</code></p>
                     </td>
                     <td>
                         <p />
