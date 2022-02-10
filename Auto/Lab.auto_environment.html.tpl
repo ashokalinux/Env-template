@@ -337,6 +337,83 @@ th{
                         <p />
                     </td>
                 </tr>
+                    <tr>
+                    <td>
+                        <p>MERCHANT_ORACLE_ENDPOINT</p>
+                    </td>
+                    <td>
+                        <p><a href="http://moja-simulator.${trimsuffix(data.terraform_remote_state.iac.outputs.public_subdomain, ".")}.internal:30000/oracle">http://moja-simulator.${trimsuffix(data.terraform_remote_state.iac.outputs.public_subdomain, ".")}.internal:30000/oracle</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>ALIAS_ORACLE_ENDPOINT</p>
+                    </td>
+                    <td>
+                        <p><a href="http://${data.terraform_remote_state.k8s-base.outputs.alias-oracle-fqdn}:30000/als-api">http://${data.terraform_remote_state.k8s-base.outputs.alias-oracle-fqdn}:30000/als-api</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>ALIAS_ORACLE_ADMIN_API_ENDPOINT</p>
+                    </td>
+                    <td>
+                        <p><a href="http://${data.terraform_remote_state.k8s-base.outputs.alias-oracle-fqdn}:30000/admin-api">http://${data.terraform_remote_state.k8s-base.outputs.alias-oracle-fqdn}:30000/admin-api</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>ACCOUNT_ORACLE_ENDPOINT</p>
+                    </td>
+                    <td>
+                        <p><a href="http://${data.terraform_remote_state.k8s-base.outputs.mfi-account-oracle-fqdn}:30000/als-api">http://${data.terraform_remote_state.k8s-base.outputs.mfi-account-oracle-fqdn}:30000/als-api</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>ACCOUNT_ORACLE_ADMIN_API_ENDPOINT</p>
+                    </td>
+                    <td>
+                        <p><a href="http://${data.terraform_remote_state.k8s-base.outputs.mfi-account-oracle-fqdn}:30000/admin-api">http://${data.terraform_remote_state.k8s-base.outputs.mfi-account-oracle-fqdn}:30000/admin-api</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>PM4ML_DOMAIN</p>
+                    </td>
+                    <td>
+                        <p><a href="${replace(var.client, "-", "")}${replace(var.environment, "-", "")}k3s.${data.terraform_remote_state.iac.outputs.public_subdomain}">${replace(var.client, "-", "")}${replace(var.environment, "-", "")}k3s.${data.terraform_remote_state.iac.outputs.public_subdomain}</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>MOJALOOP_RELEASE</p>
+                    </td>
+                    <td>
+                        <p><a href="var.helm_mojaloop_release_name">var.helm_mojaloop_release_name</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <p>Internal vpn (k3s)</p>
