@@ -17,6 +17,15 @@ data "terraform_remote_state" "boot" {
   }
 }
 
+data "terraform_remote_state" "k8s-base" {
+  backend = "s3"
+  config = {
+    region = var.region
+    bucket = "${var.client}-mojaloop-state"
+    key    = "${var.environment}/terraform-k8s.tfstate"
+  }
+}
+
 #aws data source
 data "aws_caller_identity" "current" {}
 
@@ -45,8 +54,8 @@ resource "local_file" "gp_auto_environment_file" {
     TENANT                             = "${upper(var.client)}",
     BUCKET			                       = "${var.client}-mojaloop-state",
     tenant                             = "${var.client}",
-    environment                        = "${var.environment}"
-
+    environment                        = "${var.environment}",
+    MOJALOOP_RELEASE                   = "${var.helm_mojaloop_release_name}"
   })
   filename   = "${path.root}/Auto/Env/Lab.auto_environment.html"
 }
