@@ -394,10 +394,10 @@ th{
                 </tr>
                     <tr>
                     <td>
-                        <p>PM4ML_DOMAIN</p>
+                        <p>MOJALOOP_RELEASE</p>
                     </td>
                     <td>
-                        <p><a href="http://${PM4ML_DOMAIN}">http://${PM4ML_DOMAIN}</a></p>
+                        <p><a href="${MOJALOOP_RELEASE}">${MOJALOOP_RELEASE}</a></p>
                     </td>
                     <td>
                         <p />
@@ -405,10 +405,10 @@ th{
                 </tr>
                     <tr>
                     <td>
-                        <p>MOJALOOP_RELEASE</p>
+                        <p>PM4ML_DOMAIN</p>
                     </td>
                     <td>
-                        <p><a href="${MOJALOOP_RELEASE}">${MOJALOOP_RELEASE} </a></p>
+                        <p><a href="${PM4ML_DOMAIN}">${PM4ML_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
