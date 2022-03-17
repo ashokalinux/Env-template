@@ -142,7 +142,7 @@ th{
                         <p>MCM</p>
                     </td>
                     <td>
-                        <p><a href="http://mcmweb.${LAB_DOMAIN}:30000/login">http://mcmweb.${LAB_DOMAIN}:30000/login</a></p>
+                        <p><a href="http://mcm.${LAB_DOMAIN}">http://mcm.${LAB_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
@@ -153,7 +153,7 @@ th{
                         <p>ISKM</p>
                     </td>
                     <td>
-                        <p><a href="https://iskm.${LAB_DOMAIN}.internal:9443/carbon/admin/login.jsp">https://iskm.${LAB_DOMAIN}.internal:9443/carbon/</a></p>
+                        <p><a href="https://iskm.${LAB_DOMAIN}">https://iskm.${LAB_DOMAIN}.internal/</a></p>
                     </td>
                     <td>
                         <p />
@@ -175,7 +175,7 @@ th{
                         <p>Vault</p>
                     </td>
                     <td>
-                        <p><a href="http://vault.${LAB_DOMAIN}.internal/ui/vault/">http://vault.${LAB_DOMAIN}.internal/ui/vault/</a></p>
+                        <p><a href="http://vault.${LAB_DOMAIN}">http://vault.${LAB_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
@@ -199,7 +199,7 @@ th{
                         <p>Financial Portal - v2</p>
                     </td>
                     <td>
-                        <p><a href="http://finance-portal-v2.${LAB_DOMAIN}.internal:30000/login">http://finance-portal-v2.${LAB_DOMAIN}.internal:30000/login</a></p>
+                        <p><a href="http://finance-portal-v2.${LAB_DOMAIN}">http://finance-portal-v2.${LAB_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
@@ -210,7 +210,7 @@ th{
                         <p>Financial Portal - V3</p>
                     </td>
                     <td>
-                        <p><a href="http://bofportal.${LAB_DOMAIN}.internal/">http://bofportal.${LAB_DOMAIN}.internal/</a></p>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}">http://bofportal.${LAB_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
@@ -221,7 +221,7 @@ th{
                         <p>Reconciliation Reports</p>
                     </td>
                     <td>
-                        <p><a href="http://bofportal.${LAB_DOMAIN}.internal/proxy/reports/">http://bofportal.${LAB_DOMAIN}.internal/proxy/reports/</a></p>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/">http://bofportal.${LAB_DOMAIN}/proxy/reports/</a></p>
                     </td>
                     <td>
                         <p />
@@ -353,7 +353,7 @@ th{
                         <p>ALIAS_ORACLE_ENDPOINT</p>
                     </td>
                     <td>
-                        <p><a href="http://${ALIAS_ORACLE}:30000/als-api">http://${ALIAS_ORACLE}:30000/als-api</a></p>
+                        <p><a href="http://${ALIAS_ORACLE}/als-api">http://${ALIAS_ORACLE}/als-api</a></p>
                     </td>
                     <td>
                         <p />
@@ -364,7 +364,7 @@ th{
                         <p>ALIAS_ORACLE_ADMIN_API_ENDPOINT</p>
                     </td>
                     <td>
-                        <p><a href="http://${ALIAS_ORACLE}:30000/admin-api">http://${ALIAS_ORACLE}:30000/admin-api</a></p>
+                        <p><a href="http://${ALIAS_ORACLE}/admin-api">http://${ALIAS_ORACLE}/admin-api</a></p>
                     </td>
                     <td>
                         <p />
@@ -375,7 +375,7 @@ th{
                         <p>ACCOUNT_ORACLE_ENDPOINT</p>
                     </td>
                     <td>
-                        <p><a href="http://${ACCOUNT_ORACLE}:30000/als-api">http://${ACCOUNT_ORACLE}:30000/als-api</a></p>
+                        <p><a href="http://${ACCOUNT_ORACLE}/als-api">http://${ACCOUNT_ORACLE}/als-api</a></p>
                     </td>
                     <td>
                         <p />
@@ -386,7 +386,7 @@ th{
                         <p>ACCOUNT_ORACLE_ADMIN_API_ENDPOINT</p>
                     </td>
                     <td>
-                        <p><a href="http://${ACCOUNT_ORACLE}:30000/admin-api">http://${ACCOUNT_ORACLE}:30000/admin-api</a></p>
+                        <p><a href="http://${ACCOUNT_ORACLE}/admin-api">http://${ACCOUNT_ORACLE}/admin-api</a></p>
                     </td>
                     <td>
                         <p />
