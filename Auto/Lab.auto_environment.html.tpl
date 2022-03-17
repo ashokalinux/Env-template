@@ -284,6 +284,17 @@ th{
                 </tr>
                 <tr>
                     <td>
+                        <p>Grafana</p>
+                    </td>
+                    <td>
+                        <p><a href="http://grafana.${LAB_DOMAIN}">http://grafana.${LAB_DOMAIN}</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>                
+                <tr>
+                    <td>
                         <p>Testfsp1</p>
                     </td>
                     <td>
