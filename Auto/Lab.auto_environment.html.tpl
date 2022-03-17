@@ -153,7 +153,7 @@ th{
                         <p>ISKM</p>
                     </td>
                     <td>
-                        <p><a href="https://iskm.${LAB_DOMAIN}">https://iskm.${LAB_DOMAIN}.internal/</a></p>
+                        <p><a href="https://iskm.${LAB_DOMAIN}">https://iskm.${LAB_DOMAIN}/</a></p>
                     </td>
                     <td>
                         <p />
