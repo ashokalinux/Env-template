@@ -479,7 +479,7 @@ th{
                         <p />
                     </td>
                     <td>
-                        <p><code>${HAPROXY_CALLBACK}</code></p>
+                        <p><code> NA </code></p>
                     </td>
                 </tr>
                 <tr>
@@ -493,7 +493,7 @@ th{
                         <p />
                     </td>
                     <td>
-                        <p><code>${HAPROXY_ADDON} (addons)</code><br /><code>${HAPROXY_GW}</code> <code>(gateway)</code></p>
+                        <p><code> NA (addons)</code><br /><code>NA </code> <code>(gateway)</code></p>
                     </td>
                 </tr>
                 <tr>
