@@ -414,6 +414,42 @@ th{
                         <p />
                     </td>
                 </tr>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>FINANCE_PORTAL_VERSION</p>
+                    </td>
+                    <td>
+                        <p><code>${FINANCE_PORTAL_VERSION}</code></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>BOF_VERSION</p>
+                    </td>
+                    <td>
+                        <p><code>${BOF_VERSION}</code></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                </tr>
+                    <tr>
+                    <td>
+                        <p>MCM_CONNECTION_MANAGER_VERSION</p>
+                    </td>
+                    <td>
+                        <p><code>${MCM_CONNECTION_MANAGER_VERSION}</code></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
                     <tr>
                     <td>
                         <p>PM4ML_DOMAIN</p>
