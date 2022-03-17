@@ -56,9 +56,9 @@ resource "local_file" "gp_auto_environment_file" {
     ACCOUNT_ORACLE                     = (data.terraform_remote_state.k8s-base.outputs.mfi-account-oracle-fqdn),
     PM4ML_DOMAIN                       = "${replace(var.client, "-", "")}${replace(var.environment, "-", "")}k3s.${data.terraform_remote_state.iac.outputs.public_subdomain}",
     MOJALOOP_RELEASE                   = (data.terraform_remote_state.k8s-base.outputs.helm_mojaloop_version),
-    FINANCE_PORTAL_VERSION             = "${helm_finance_portal_version}",
-    BOF_VERSION                        = "${helm_bof_version}",
-    MCM_CONNECTION_MANAGER_VERSION     = "${helm_mcm_connection_manager_version}"
+    FINANCE_PORTAL_VERSION             = "${var.helm_finance_portal_version}",
+    BOF_VERSION                        = "${var.helm_bof_version}",
+    MCM_CONNECTION_MANAGER_VERSION     = "${var.helm_mcm_connection_manager_version}"
   })
   filename   = "${path.root}/Auto/Env/Lab.auto_environment.html"
 }

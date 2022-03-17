@@ -14,3 +14,15 @@ variable "environment" {
 variable "region" {
   default = ""
 }
+
+variable "helm_finance_portal_version" {
+  default = ""
+}
+
+variable "helm_bof_version" {
+  default = ""
+}
+
+variable "helm_mcm_connection_manager_version" {
+  default = ""
+}
