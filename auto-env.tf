@@ -42,9 +42,6 @@ resource "local_file" "gp_auto_environment_file" {
   content = templatefile("${path.root}/Auto/Lab.auto_environment.html.tpl", {
     LAB_DOMAIN                         = (data.terraform_remote_state.iac.outputs.public_subdomain),
     TENANT_DOMAIN                      = trimprefix(data.terraform_remote_state.iac.outputs.public_subdomain, "${var.environment}"),
-    HAPROXY_ADDON                      = (data.terraform_remote_state.iac.outputs.haproxy_addons_private_ip),
-    HAPROXY_CALLBACK                   = (data.terraform_remote_state.iac.outputs.haproxy_callback_private_ip),
-    HAPROXY_GW                         = (data.terraform_remote_state.iac.outputs.haproxy_gateway_private_ip),
     WIREGUARD                          = (data.terraform_remote_state.boot.outputs.wireguard_vpn_hostname),
     WIREGUARD_PRI                      = (data.terraform_remote_state.boot.outputs.wireguard_private_ip),
     WIREGUARD_PUB                      = (data.terraform_remote_state.boot.outputs.wireguard_public_ip),
