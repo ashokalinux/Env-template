@@ -207,7 +207,7 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Financial Portal - V3</p>
+                        <p>Financial Portal - V3 (BizOps)</p>
                     </td>
                     <td>
                         <p><a href="http://bofportal.${LAB_DOMAIN}">http://bofportal.${LAB_DOMAIN}</a></p>
@@ -251,43 +251,10 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Payment Manager - Sender</p>
-                    </td>
-                    <td>
-                        <p><a href="http://pm4mlsenderfsp.${LAB_DOMAIN}:30000/login">http://pm4mlsenderfsp.${LAB_DOMAIN}:30000/login</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Payment Manager - Receiver</p>
-                    </td>
-                    <td>
-                        <p><a href="http://pm4mlreceiverfsp.${LAB_DOMAIN}:30000/login">http://pm4mlreceiverfsp.${LAB_DOMAIN}:30000/login</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Prometheus</p>
-                    </td>
-                    <td>
-                        <p><a href="http://prometheus-add-ons.${LAB_DOMAIN}.internal:30000/graph">http://prometheus-add-ons.${LAB_DOMAIN}.internal:30000/graph</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <p>Grafana</p>
                     </td>
                     <td>
-                        <p><a href="http://grafana.${LAB_DOMAIN}">http://grafana.${LAB_DOMAIN}</a></p>
+                        <p><a href="https://grafana.${LAB_DOMAIN}">https://grafana.${LAB_DOMAIN}</a></p>
                     </td>
                     <td>
                         <p />
@@ -339,10 +306,10 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Kibana Event stream processor</p>
+                        <p>Loki Event stream processor</p>
                     </td>
                     <td>
-                        <p><a href="http://kibana.${LAB_DOMAIN}.internal:30000/app/apm#/event-stream-processor/transactions/custom?rangeFrom=now%2Fy&amp;rangeTo=now&amp;refreshPaused=true&amp;refreshInterval=0">http://kibana.${LAB_DOMAIN}.internal:30000/app/apm#/event-stream-processor/transactions/custom?rangeFrom=now%2Fy&amp;rangeTo=now&amp;refreshPaused=true&amp;refreshInterval=0</a></p>
+                        <p><a href="https://grafana.${LAB_DOMAIN}/explore?orgId=1&left=["now-1h","now","Loki",{"exemplar":true,"expr":"{namespace%3D~\"cert-manager|default|external-dns|kube-system|longhorn-system|mcm|mojaloop|monitoring|nginx-ext|nginx-int|wso2\"}"}]">https://grafana.${LAB_DOMAIN}/explore?orgId=1&left=["now-1h","now","Loki",{"exemplar":true,"expr":"{namespace%3D~\"cert-manager|default|external-dns|kube-system|longhorn-system|mcm|mojaloop|monitoring|nginx-ext|nginx-int|wso2\"}"}]</a></p>
                     </td>
                     <td>
                         <p />
@@ -493,7 +460,7 @@ th{
                         <p>ML Connector Outbound endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
                         <p>ML Connector Inbound endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
                         <p>ML Connector Test endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
-                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Payment Manager endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
@@ -510,7 +477,7 @@ th{
                         <p>ML Connector Outbound endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
                         <p>ML Connector Inbound endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
                         <p>ML Connector Test endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
-                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Payment Manager endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
@@ -527,7 +494,7 @@ th{
                         <p>ML Connector Outbound endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
                         <p>ML Connector Inbound endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
                         <p>ML Connector Test endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
-                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Payment Manager endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
@@ -544,7 +511,7 @@ th{
                         <p>ML Connector Outbound endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
                         <p>ML Connector Inbound endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
                         <p>ML Connector Test endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
-                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Payment Manager endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
