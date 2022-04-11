@@ -452,7 +452,7 @@ th{
                 </tr>
                     <tr>
                     <td>
-                        <p>PM4ML_DOMAIN</p>
+                        <p>INTERNAL_PM4ML_DOMAIN</p>
                     </td>
                     <td>
                         <p><a href="${PM4ML_DOMAIN}">${PM4ML_DOMAIN}</a></p>
@@ -474,16 +474,78 @@ th{
                 </tr>
                 <tr>
                     <td>
+                        <p>Internal vault (k3s)</p>
+                    </td>
+                    <td>
+                        <p><a href="https://vault.${tenant}${environment}k3s.${LAB_DOMAIN}/"><u>https://vault.${tenant}${environment}k3s.${LAB_DOMAIN}/</u></a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <p>demomfi</p>
                     </td>
                     <td>
-                        <p>Sim Backend endpoint - <a href="http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/sim-backend-test"><u>http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/sim-backend-test</u></a></p>
-                        <p>Core Connector endpoint - <a href="http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/cc-send">http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/cc-send</a></p>
-                        <p>ML Connector Outbound endpoint - <a href="http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
-                        <p>ML Connector Inbound endpoint - <a href="http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.pre${environment}k3s.${LAB_DOMAIN}"><u>connector.demomfi.pre${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
-                        <p>ML Connector Test endpoint - <a href="http://test.demomfi.pre${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.pre${environment}k3s.${LAB_DOMAIN}"><u>connector.demomfi.pre${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
-                        <p>PM4ML endpoint - http://<a href="http://portal.demowallet.pre${environment}k3s.${LAB_DOMAIN}">portal.demomfi.pre${environment}k3s.${LAB_DOMAIN}</a></p>
-                        <p>PM4ML Keycloak Admin endpoint - http://<a href="http://keycloak.demowallet.pre${environment}k3s.${LAB_DOMAIN}/auth">keycloak.demomfi.pre${environment}k3s.${LAB_DOMAIN}/auth</a></p>
+                        <p>Sim Backend endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test"><u>http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test</u></a></p>
+                        <p>Core Connector endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send">http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send</a></p>
+                        <p>ML Connector Outbound endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
+                        <p>ML Connector Inbound endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
+                        <p>ML Connector Test endpoint - <a href="http://test.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
+                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>demowallet</p>
+                    </td>
+                    <td>
+                        <p>Sim Backend endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test"><u>http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test</u></a></p>
+                        <p>Core Connector endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send">http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send</a></p>
+                        <p>ML Connector Outbound endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
+                        <p>ML Connector Inbound endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
+                        <p>ML Connector Test endpoint - <a href="http://test.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
+                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>pm4mlreceiverfsp</p>
+                    </td>
+                    <td>
+                        <p>Sim Backend endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test"><u>http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test</u></a></p>
+                        <p>Core Connector endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send">http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send</a></p>
+                        <p>ML Connector Outbound endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
+                        <p>ML Connector Inbound endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
+                        <p>ML Connector Test endpoint - <a href="http://test.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
+                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>pm4mlsenderfsp</p>
+                    </td>
+                    <td>
+                        <p>Sim Backend endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test"><u>http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/sim-backend-test</u></a></p>
+                        <p>Core Connector endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send">http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/cc-send</a></p>
+                        <p>ML Connector Outbound endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound</u></a></p>
+                        <p>ML Connector Inbound endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/inbound</u></p>
+                        <p>ML Connector Test endpoint - <a href="http://test.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/mlcon-outbound"><u>http://</u></a><a href="http://connector.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}"><u>connector.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</u></a><u>/sdktest</u></p>
+                        <p>PM4ML endpoint - <a href="http://portal.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}">http://portal.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}</a></p>
+                        <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
                         <p />
