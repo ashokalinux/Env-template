@@ -15,6 +15,8 @@ border: 1px solid #ccc;
 }
 p{
 padding:0px 5px;
+word-wrap: break-word;
+word-break: break-all;
 }
 tr{
 height:1px;
