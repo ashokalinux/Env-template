@@ -309,7 +309,7 @@ th{
                         <p>Loki Event stream processor</p>
                     </td>
                     <td>
-                        <p><a href="https://grafana.${LAB_DOMAIN}/explore?orgId=1&left=["now-1h","now","Loki",{"exemplar":true,"expr":"{namespace%3D~\"cert-manager|default|external-dns|kube-system|longhorn-system|mcm|mojaloop|monitoring|nginx-ext|nginx-int|wso2\"}"}]">https://grafana.${LAB_DOMAIN}/explore?orgId=1&left=["now-1h","now","Loki",{"exemplar":true,"expr":"{namespace%3D~\"cert-manager|default|external-dns|kube-system|longhorn-system|mcm|mojaloop|monitoring|nginx-ext|nginx-int|wso2\"}"}]</a></p>
+                        <p><a href="https://grafana.${LAB_DOMAIN}/explore?orgId=1&left=%7B%22datasource%22:%22Loki%22,%22queries%22:%5B%7B%22refId%22:%22A%22,%22expr%22:%22%7Bnamespace%3D%5C%22mojaloop%5C%22%7D%22%7D%5D,%22range%22:%7B%22from%22:%22now-1h%22,%22to%22:%22now%22%7D%7D">https://grafana.${LAB_DOMAIN}/explore?orgId=1&left=%7B%22datasource%22:%22Loki%22,%22queries%22:%5B%7B%22refId%22:%22A%22,%22expr%22:%22%7Bnamespace%3D%5C%22mojaloop%5C%22%7D%22%7D%5D,%22range%22:%7B%22from%22:%22now-1h%22,%22to%22:%22now%22%7D%7D</a></p>
                     </td>
                     <td>
                         <p />
