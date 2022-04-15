@@ -220,13 +220,74 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Reconciliation Reports</p>
+                        <p>Settlement Initiation Report</p>
                     </td>
                     <td>
-                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/">http://bofportal.${LAB_DOMAIN}/proxy/reports/</a></p>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/settlementInitiation">http://bofportal.${LAB_DOMAIN}/proxy/reports/settlementInitiation</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/settlementInitiation?settlementId=1">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/dfspSettlement?settlementId=1&dfspId=demowallet</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>DFSP Settlement Report</p>
                     </td>
                     <td>
-                        <p />
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlement">http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlement</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlement?settlementId=1&dfspId=demowallet">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/dfspSettlement?settlementId=1&dfspId=demowallet</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>DFSP Settlement Detail Report</p>
+                    </td>
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlementDetail">http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlementDetail</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlementDetail?settlementId=1&fspid=demowallet">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/dfspSettlementDetail?settlementId=1&fspid=demowallet</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>DFSP Settlement Statement Report</p>
+                    </td>
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlementStatement">http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlementStatement</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspSettlementStatement?dfspId=pm4mlsenderfsp&startDate=01-01-2022&endDate=14-04-2022">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/dfspSettlementStatement?dfspId=pm4mlsenderfsp&startDate=01-01-2022&endDate=14-04-2022</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Reconciliation Amount Report</p>
+                    </td>
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/reconciliationAmount">http://bofportal.${LAB_DOMAIN}/proxy/reports/reconciliationAmount</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/reconciliationAmount?settlementWindowId=18&dfspId=demowallet">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/reconciliationAmount?settlementWindowId=18&dfspId=demowallet</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Settlement Window Report</p>
+                    </td>
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/settlementWindow">http://bofportal.${LAB_DOMAIN}/proxy/reports/settlementWindow</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/settlementWindow">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/settlementWindow</a></p>
                     </td>
                 </tr>
                 <tr>
