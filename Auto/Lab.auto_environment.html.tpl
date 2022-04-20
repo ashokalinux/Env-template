@@ -111,7 +111,9 @@ th{
                         <p>External gateway</p>
                     </td>
                     <td>
-                        <p><a href="https://extgw.${LAB_DOMAIN}:9443/">https://extgw.${LAB_DOMAIN}</a>:9443</p>
+                        <p>publisher endpoint - <a href="https://extgw-mgmt.${LAB_DOMAIN}/publisher"><u>https://extgw-mgmt.${LAB_DOMAIN}/publisher</u></a></p>
+                        <p>carbon endpoint - <a href="https://extgw-mgmt.${LAB_DOMAIN}/carbon"><u>https://extgw-mgmt.${LAB_DOMAIN}/carbon</u></a></p>
+                        <p>store endpoint - <a href="https://extgw-mgmt.${LAB_DOMAIN}/store"><u>https://extgw-mgmt.${LAB_DOMAIN}/store</u></a></p>
                     </td>
                     <td>
                         <p />
@@ -119,10 +121,23 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Hub Endpoint - External</p>
+                        <p>Internal Gateway</p>
                     </td>
                     <td>
-                        <p><a href="https://extgw.${LAB_DOMAIN}:8243/fsp/1.0">https://extgw.${LAB_DOMAIN}:8243/fsp/1.0</a></p>
+                        <p>publisher endpoint - <a href="https://intgw-mgmt-int.${LAB_DOMAIN}/publisher"><u>https://intgw-mgmt-int.${LAB_DOMAIN}/publisher</u></a></p>
+                        <p>carbon endpoint - <a href="https://intgw-mgmt-int.${LAB_DOMAIN}/carbon"><u>https://intgw-mgmt-int.${LAB_DOMAIN}/carbon</u></a></p>
+                        <p>store endpoint - <a href="https://intgw-mgmt-int.${LAB_DOMAIN}/store"><u>https://intgw-mgmt-int.${LAB_DOMAIN}/store</u></a></p>
+                    </td>
+                    <td>
+                        <p />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hub Endpoint </p>
+                    </td>
+                    <td>
+                        <p><a href="https://extgw-data.${LAB_DOMAIN}:8243/fsp/1.0">https://extgw-data.${LAB_DOMAIN}:8243/fsp/1.0</a></p>
                     </td>
                     <td>
                         <p>Mojaloop back-end API</p>
@@ -130,10 +145,10 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Hub Endpoint - Internal</p>
+                        <p>Hub Endpoint Callback</p>
                     </td>
                     <td>
-                        <p><a href="https://intgw.${LAB_DOMAIN}.internal:9843/">https://intgw.${LAB_DOMAIN}.internal</a><a href="http://intgw.dev.prod-dev.mbox-dev.io.internal:8844/payerfsp/1.0">:8844/&lt;participantID&gt;/1.0</a>&nbsp;</p>
+                        <p><a href="https://intgw-data-int.${LAB_DOMAIN}:443/fsp/1.0">https://intgw-data-int.${LAB_DOMAIN}:443/fsp/1.0</a></p>
                     </td>
                     <td>
                         <p>Mojaloop back-end API - Callback URL</p>
@@ -163,34 +178,10 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Internal Gateway</p>
-                    </td>
-                    <td>
-                        <p><a href="https://intgw.${LAB_DOMAIN}.internal:9843/">https://intgw.${LAB_DOMAIN}.internal:9843/</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <p>Vault</p>
                     </td>
                     <td>
                         <p><a href="http://vault.${LAB_DOMAIN}">http://vault.${LAB_DOMAIN}</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>
-                            <ac:inline-comment-marker ac:ref="53df0341-56ae-4e25-a886-db20e27dca75">Financial Portal</ac:inline-comment-marker>
-                        </p>
-                    </td>
-                    <td>
-                        <p><a href="http://finance-portal.${LAB_DOMAIN}.internal:30000/">http://finance-portal.${LAB_DOMAIN}.internal:30000/</a></p>
                     </td>
                     <td>
                         <p />
@@ -209,7 +200,7 @@ th{
                 </tr>
                 <tr>
                     <td>
-                        <p>Financial Portal - V3 (BizOps)</p>
+                        <p>Business Operations Portal (BizOps)</p>
                     </td>
                     <td>
                         <p><a href="http://bofportal.${LAB_DOMAIN}">http://bofportal.${LAB_DOMAIN}</a></p>
@@ -325,17 +316,6 @@ th{
                 </tr>                
                 <tr>
                     <td>
-                        <p>Testfsp1</p>
-                    </td>
-                    <td>
-                        <p><a href="http://haproxy-callback.${LAB_DOMAIN}.internal/sim/testfsp1/inbound">http://haproxy-callback.${LAB_DOMAIN}.internal/sim/testfsp1/inbound</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <p>AWS console</p>
                     </td>
                     <td>
@@ -378,16 +358,6 @@ th{
                         <p />
                     </td>
                 </tr>
-                    <tr>
-                    <td>
-                        <p>MERCHANT_ORACLE_ENDPOINT</p>
-                    </td>
-                    <td>
-                        <p><a href="http://moja-simulator.${LAB_DOMAIN}.internal:30000/oracle">http://moja-simulator.${LAB_DOMAIN}.internal:30000/oracle</a></p>
-                    </td>
-                    <td>
-                        <p />
-                    </td>
                 </tr>
                     <tr>
                     <td>
