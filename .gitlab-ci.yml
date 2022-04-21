@@ -1,0 +1,28 @@
+# pre requisite
+# 1.Define stage "Environment Report"
+# 2.Add variable "SSH_PRIVATE_KEY" in /settings/ci_cd/Variables
+# Generated Environment.html file will be available in Env directory of S3 Bucket s3://${BUCKET}/${environment}/Env/
+#job template for extract-env-info
+Automated Env Report :
+  stage: "Environment Report"
+  script:
+#    - aws s3 sync s3://${BUCKET}/${environment}/k8s-cluster/sim_tests/ $CI_IMAGE_PROJECT_DIR/sim_tests --sse
+#    - cd /tmp && git clone https://github.com/ashokalinux/Env-template.git
+#    - cd /tmp/Env-template
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - cd /tmp && git clone git@github.com:modusintegration/mes-extract-env-info.git
+    - cd /tmp/mes-extract-env-info
+    - export
+    - terraform init
+    - terraform plan -out=plan.env
+    - terraform apply "plan.env"
+    - pwd
+    - ls -R
+    - cp ./Auto/Env/Lab.auto_environment.html $CI_IMAGE_PROJECT_DIR/${client}.${environment}.Environment.html
+    - ls -l $CI_IMAGE_PROJECT_DIR
+#    - aws s3 sync $CI_IMAGE_PROJECT_DIR/terraform/Auto s3://${BUCKET}/${environment}/Auto --sse
+    - aws s3 cp $CI_IMAGE_PROJECT_DIR/${client}.${environment}.Environment.html s3://${BUCKET}/${environment}/Env/ --sse
+  when: manual
+  artifacts:
+    paths:
+      - $CI_IMAGE_PROJECT_DIR/${client}.${environment}.Environment.html
