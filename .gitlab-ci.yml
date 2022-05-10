@@ -10,7 +10,7 @@ Automated Env Report :
 #    - cd /tmp && git clone https://github.com/ashokalinux/Env-template.git
 #    - cd /tmp/Env-template
     - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    - cd /tmp && git clone git@github.com:modusintegration/mes-extract-env-info.git
+    - cd /tmp && git clone -b v1.0.0 git@github.com:modusintegration/mes-extract-env-info.git
     - cd /tmp/mes-extract-env-info
     - export
     - terraform init
