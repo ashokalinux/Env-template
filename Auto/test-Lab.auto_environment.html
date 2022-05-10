@@ -283,6 +283,18 @@ th{
                 </tr>
                 <tr>
                     <td>
+                        <p>DFSP Transactions Fee Settlement Report</p>
+                    </td>
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspTransactionsFeeSettlement">http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspTransactionsFeeSettlement</a></p>
+                    </td>
+                    
+                    <td>
+                        <p><a href="http://bofportal.${LAB_DOMAIN}/proxy/reports/dfspTransactionsFeeSettlement?startdate=2022-05-07&enddate=2022-05-08&fromfspid=all&tofspid=all&timezoneoffset=0630">http://bofportal.${LAB_DOMAIN}/proxy/proxy/reports/dfspTransactionsFeeSettlement?startdate=2022-05-07&enddate=2022-05-08&fromfspid=all&tofspid=all&timezoneoffset=0630</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <p>TTK - frontend</p>
                     </td>
                     <td>
