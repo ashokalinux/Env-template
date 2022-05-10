@@ -639,10 +639,10 @@ th{
                         <p />
                     </td>
                     <td>
-                        <p><code>13.212.185.49</code></p>
+                        <p><code>${GITLAB_SERVER_PUB}</code></p>
                     </td>
                     <td>
-                        <p><code>10.25.0.100</code></p>
+                        <p><code> </code></p>
                     </td>
                 </tr>
                 <tr>
@@ -653,10 +653,10 @@ th{
                         <p />
                     </td>
                     <td>
-                        <p><code>54.169.247.165</code></p>
+                        <p><code>${GITLAB_CI_PUB}</code></p>
                     </td>
                     <td>
-                        <p><code>10.25.0.234</code></p>
+                        <p><code>${GITLAB_CI_PRI}</code></p>
                     </td>
                 </tr>
             </tbody>
