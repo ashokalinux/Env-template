@@ -470,7 +470,7 @@ th{
                         <p><a href="${PM4ML_DOMAIN}">${PM4ML_DOMAIN}</a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
                 <tr>
@@ -481,7 +481,7 @@ th{
                         <p><a href="https://vpn.${tenant}${environment}k3s.${LAB_DOMAIN}/"><u>https://vpn.${tenant}${environment}k3s.${LAB_DOMAIN}/</u></a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
                 <tr>
@@ -492,7 +492,7 @@ th{
                         <p><a href="https://vault.${tenant}${environment}k3s.${LAB_DOMAIN}/"><u>https://vault.${tenant}${environment}k3s.${LAB_DOMAIN}/</u></a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
                 <tr>
@@ -509,7 +509,7 @@ th{
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.demomfi.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
                 <tr>
@@ -526,7 +526,7 @@ th{
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.demowallet.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
                 <tr>
@@ -543,7 +543,7 @@ th{
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.pm4mlreceiverfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
                 <tr>
@@ -560,7 +560,7 @@ th{
                         <p>PM4ML Keycloak Admin endpoint - <a href="http://keycloak.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth">http://keycloak.pm4mlsenderfsp.${tenant}${environment}k3s.${LAB_DOMAIN}/auth</a></p>
                     </td>
                     <td>
-                        <p />
+                        <p> endpoints are only valid if internal pm4mls are deployed</p>
                     </td>
                 </tr>
             </tbody>
